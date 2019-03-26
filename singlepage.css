@@ -30,3 +30,10 @@ div {
     border-radius: 8px;
     width: auto;
 }
+
+.add-btn {
+    background-color: white;
+    color: black;
+    width: 1%;
+    float: right;
+}

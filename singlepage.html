@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="singlepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <title>Single Page</title>
 </head>
 
@@ -15,7 +17,12 @@
         <div class="azul-btn"><h2>Azul</h2></div>
     </div>
 
+    <!-- Caixa principal -->
     <div class="main-box">
+        <!-- Botão de adicionar outra caixa -->
+        <div class="add-btn"> <i class="fas fa-plus"></i></div>
+
+        <!-- Caixa adiciona por padrão pela aplicação -->
 
     </div>
 
@@ -32,8 +39,8 @@
 
   <!-- Comportamento de clique no botão verde -->
   <script>
-    $(".verde-btn").click(function() {
-        alert("Teste de clique funcionando!");
+    $(".add-btn").click(function() {
+        $(".main-box").append("Teste de .append")
     });
   </script>
 
