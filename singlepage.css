@@ -1,0 +1,32 @@
+div {
+    width: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.top-buttons {
+    /* width: fit-content; */
+    display: grid;
+    grid-template-columns: 500px 500px 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-box {
+    width: auto;
+    height: 300px;
+    border: 1px solid;
+}
+
+.verde-btn {
+    background-color: green;
+    border-radius: 8px;
+    width: auto;
+}
+
+.azul-btn {
+    background-color: blue;
+    border-radius: 8px;
+    width: auto;
+}
