@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Botões superiores -->
     <div class="top-buttons">
         <div class="verde-btn"><h2>Verde</h2></div>
         <div class="azul-btn"><h2>Azul</h2></div>
@@ -20,9 +21,12 @@
     <!-- Caixa principal -->
     <div class="main-box">
         <!-- Botão de adicionar outra caixa -->
-        <div class="add-btn"> <i class="fas fa-plus"></i></div>
+        <button onclick="drawBox()" class="add-btn"><i class="fas fa-plus"></i></button>
+        
+        <!-- Caixa adicionada por padrão pela aplicação -->
+        <div class="little-box"><i onclick="removeBox()" class="fas fa-trash-alt"></i></div>
 
-        <!-- Caixa adiciona por padrão pela aplicação -->
+
 
     </div>
 
@@ -37,13 +41,25 @@
   crossorigin="anonymous"></script>
 
 
-  <!-- Comportamento de clique no botão verde -->
-  <script>
-    $(".add-btn").click(function() {
-        $(".main-box").append("Teste de .append")
-    });
-  </script>
+<!-- Comportamento de clique no botão "+" -->
+<script>
+    function drawBox() {
+    var littleBox = "<div class='little-box'><i class='fas fa-trash-alt'></i></div>"
 
+    $(".main-box").append(littleBox);
+    }
+</script>
+
+<script>
+    function removeBox() {
+        var littleBox = "<div class='little-box'><i class='fas fa-trash-alt'></i></div>"
+        // $(".main-box").remove(littleBox)
+        alert("Botão de lixeira funcionando!")
+        $(littleBox).remove();
+
+    }
+
+</script>
 
 </body>
 

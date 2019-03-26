@@ -14,26 +14,39 @@ div {
 }
 
 .main-box {
-    width: auto;
-    height: 300px;
+    width: 80%;
+    min-height: 300px;
+    display: inline-block;
     border: 1px solid;
+    margin: 0 auto;
 }
 
 .verde-btn {
-    background-color: green;
+    background-color: lightseagreen;
     border-radius: 8px;
     width: auto;
 }
 
 .azul-btn {
-    background-color: blue;
+    background-color: cornflowerblue;
     border-radius: 8px;
     width: auto;
 }
 
 .add-btn {
-    background-color: white;
+    /* background-color: white; */
     color: black;
-    width: 1%;
+    /* width: 1%; */
     float: right;
+}
+
+.little-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: lightseagreen;
+    border-radius: 8px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
