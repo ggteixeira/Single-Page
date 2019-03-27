@@ -25,41 +25,20 @@
         
         <!-- Caixa adicionada por padrão pela aplicação -->
         <div class="little-box"><i onclick="removeBox()" class="fas fa-trash-alt"></i></div>
-
-
-
     </div>
 
 
 
 
 <!-- JQuery -->
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-
-<!-- Comportamento de clique no botão "+" -->
-<script>
-    function drawBox() {
-    var littleBox = "<div class='little-box'><i class='fas fa-trash-alt'></i></div>"
-
-    $(".main-box").append(littleBox);
-    }
+<script 
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
 </script>
 
-<script>
-    function removeBox() {
-        var littleBox = "<div class='little-box'><i class='fas fa-trash-alt'></i></div>"
-        // $(".main-box").remove(littleBox)
-        alert("Botão de lixeira funcionando!")
-        $(littleBox).remove();
-
-    }
-
-</script>
+<!-- JavaScript -->
+<script src="behaviors.js"></script>
 
 </body>
 
