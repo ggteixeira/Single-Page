@@ -27,13 +27,32 @@ $('.main-box-blue').on('click', '.btn-remover', function(){
 
 // Clique no botão VERDE
 $(".verde-btn").on('click', function(){
+    // Esconde a caixa de botões azuis:
     $(".main-box-blue").css("display", "none");
+
+    // Mostra a caixa de botões verdes:
     $(".main-box").css("display", "inline-block");
+
+    // Esmaece o botão azul:
+    $('.azul-btn').css("opacity", "0.6");
+
+    // Realçar o botão verde:
+    $('.verde-btn').css("opacity", "1")
+
 })
 
 // Clique no botão AZUL
 $(".azul-btn").on('click', function(){
+    // Esconde a caixa de botões verdes:
     $(".main-box").css("display", "none");
+
+    // Mostra a caixa de botões azuis:
     $(".main-box-blue").css("display", "inline-block")
+
+    // Esmaece o botão verde:
+    $('.verde-btn').css("opacity", "0.6");
+
+    // Realça o botão azul:
+    $('.azul-btn').css("opacity", "1");
 
 })
