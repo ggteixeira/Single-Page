@@ -24,7 +24,7 @@ div {
 .main-box-blue {
     width: 80%;
     min-height: 300px;
-    display: inline-block;
+    display: none;
     border: 1px solid;
     margin: 0 auto;
 }

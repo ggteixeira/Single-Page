@@ -22,3 +22,18 @@ $('.main-box').on('click', '.btn-remover', function(){
 $('.main-box-blue').on('click', '.btn-remover', function(){
     $(this).parent().remove();
 })
+
+// SINGLE PAGE
+
+// Clique no botão VERDE
+$(".verde-btn").on('click', function(){
+    $(".main-box-blue").css("display", "none");
+    $(".main-box").css("display", "inline-block");
+})
+
+// Clique no botão AZUL
+$(".azul-btn").on('click', function(){
+    $(".main-box").css("display", "none");
+    $(".main-box-blue").css("display", "inline-block")
+
+})
