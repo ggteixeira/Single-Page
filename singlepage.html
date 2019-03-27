@@ -18,17 +18,25 @@
         <div class="azul-btn"><h2>Azul</h2></div>
     </div>
 
-    <!-- Caixa principal -->
+    <!-- Verde -->
     <div class="main-box">
         <!-- Botão de adicionar outra caixa -->
-        <button onclick="drawBox()" class="add-btn"><i class="fas fa-plus"></i></button>
+        <button class="add-btn" onclick="drawBox()"><i class="fas fa-plus"></i></button>
         
         <!-- Caixa adicionada por padrão pela aplicação -->
-        <div class="little-box"><i onclick="removeBox()" class="fas fa-trash-alt"></i></div>
+        <div class="little-box"> <span class="btn-remover"><i class="fas fa-trash-alt"></i> </span></div>
     </div>
 
+    <!-- Azul -->
+    <div class="main-box-blue">
+        <!-- Botão de adicionar outra caixa -->
+        <button class="add-btn-blue" onclick="drawBoxBlue()"><i class="fas fa-plus"></i></button>
 
 
+
+        <!-- Caixa adicionada por padrão pela aplicação -->
+        <div class="little-box-blue"> <span class="btn-remover"><i class="fas fa-trash-alt"></i> </span></div>
+    </div>
 
 <!-- JQuery -->
 <script 
