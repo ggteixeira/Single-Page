@@ -1,11 +1,12 @@
 //  Comportamento de clique no botão "+"
 function drawBox() {
-    var littleBox = "<div class='little-box'><i onclick='removeBox()' class='fas fa-trash-alt'></i></div>"
+    var littleBox = "<div class='little-box'> <span class='btn-remover'><i class='fas fa-trash-alt'></i> </span></div>"
 
     $(".main-box").append(littleBox);
 }
 
 // Comportamento de clique no botão "lixeira"
-function removeBox() {
-    return
-}
+
+$('.main-box').on('click', '.btn-remover', function(){
+    $(this).parent().remove();
+})
