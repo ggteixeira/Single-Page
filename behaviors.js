@@ -10,3 +10,4 @@ function drawBox() {
 $('.main-box').on('click', '.btn-remover', function(){
     $(this).parent().remove();
 })
+
