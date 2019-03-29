@@ -31,7 +31,7 @@ $(".verde-btn").on('click', function(){
     $(".main-box-blue").css("display", "none");
 
     // Mostra a caixa de botões verdes:
-    $(".main-box").css("display", "inline-block");
+    $(".main-box").css("display", "block");
 
     // Esmaece o botão azul:
     $('.azul-btn').css("opacity", "0.6");
@@ -47,7 +47,7 @@ $(".azul-btn").on('click', function(){
     $(".main-box").css("display", "none");
 
     // Mostra a caixa de botões azuis:
-    $(".main-box-blue").css("display", "inline-block")
+    $(".main-box-blue").css("display", "block")
 
     // Esmaece o botão verde:
     $('.verde-btn').css("opacity", "0.6");
